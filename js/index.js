@@ -51,12 +51,21 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //selectors by tag:
 let header=document.querySelectorAll('header');
 let p=document.querySelectorAll('p');
+let navItem1=document.querySelectorAll('nav nav-item-1');
+navItem1.textContent="Services";
 let div=document.querySelectorAll('div');
 let nav=document.querySelectorAll('nav');
 let a=document.querySelectorAll('a');
 let section=document.querySelectorAll('section');
+let h1=document.querySelector('h1');
+h1.textContent=siteContent["cta"]["h1"];
+
+let button=document.querySelector('button');
+button.textContent=siteContent["cta"]["button"];
+
 let h4=document.querySelectorAll('h4');
 let footer=document.querySelectorAll('footer');
+
 
 
 //selectors by class:
@@ -68,12 +77,15 @@ let textContent=document.querySelectorAll('.textContent');
 let bottomContent=document.querySelectorAll('.bottom-content');
 let contact=document.querySelectorAll('.contact');
 
-
 //image selectors:
-let ctaImg=document.querySelector('cta-img');
+let ctaImg=document.getElementById('cta-img');
 // setting the src: 
-ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let middleImg=document.querySelector('middle-img');
+let middleImg=document.getElementById('middle-img');
 // setting the src: 
-ctaImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+
+
