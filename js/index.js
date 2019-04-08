@@ -71,8 +71,9 @@ let contact=document.querySelectorAll('.contact');
 
 //image selectors:
 let ctaImg=document.querySelector('cta-img');
+// setting the src: 
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
 let middleImg=document.querySelector('middle-img');
-
-
-
-
+// setting the src: 
+ctaImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
