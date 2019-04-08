@@ -37,6 +37,42 @@ const siteContent = {
   },
 };
 
+
+/*
+## Task 1: Create selectors to point your data into elements
+* [ ] Create selectors by using any of the DOM element's methods
+* [ ] Note that IDs have been used on all images.  Use the IDs to update src path content
+*/
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//selectors by tag:
+let header=document.querySelectorAll('header');
+let p=document.querySelectorAll('p');
+let div=document.querySelectorAll('div');
+let nav=document.querySelectorAll('nav');
+let a=document.querySelectorAll('a');
+let section=document.querySelectorAll('section');
+let h4=document.querySelectorAll('h4');
+let footer=document.querySelectorAll('footer');
+
+
+//selectors by class:
+let cta=document.querySelectorAll('.cta');
+let ctaText=document.querySelectorAll(".cta-text");
+let mainContent=document.querySelectorAll('.main-content');
+let topContent=document.querySelectorAll('.top-content');
+let textContent=document.querySelectorAll('.textContent');
+let bottomContent=document.querySelectorAll('.bottom-content');
+let contact=document.querySelectorAll('.contact');
+
+
+//image selectors:
+let ctaImg=document.querySelector('cta-img');
+let middleImg=document.querySelector('middle-img');
+
+
+
+
