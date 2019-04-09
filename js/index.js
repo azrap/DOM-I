@@ -60,11 +60,12 @@ anchors[2].textContent=siteContent["nav"]["nav-item-3"];
 anchors[3].textContent=siteContent["nav"]["nav-item-4"];
 anchors[4].textContent=siteContent["nav"]["nav-item-5"];
 anchors[5].textContent=siteContent["nav"]["nav-item-6"];
+
  anchors.forEach(element => {
   element.style.color = 'green'
  });
 
-let lastNav=document.createElement('a');
+let lastNav=document.createElement('a').style;
 lastNav.textContent='lastNav';
 nav.appendChild(lastNav);
 let firstNav=document.createElement('a');
