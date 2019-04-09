@@ -61,7 +61,7 @@ anchors[3].textContent=siteContent["nav"]["nav-item-4"];
 anchors[4].textContent=siteContent["nav"]["nav-item-5"];
 anchors[5].textContent=siteContent["nav"]["nav-item-6"];
  anchors.forEach(element => {
-  element.style.color = 'red'
+  element.style.color = 'green'
  });
 
 let lastNav=document.createElement('a');
