@@ -51,15 +51,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 //nav:
-let nav=document.querySelectorAll("nav");
+let nav=document.querySelector("nav");
 
-let a=document.querySelectorAll('nav a');
-a[0].textContent=siteContent["nav"]["nav-item-1"];
-a[1].textContent=siteContent["nav"]["nav-item-2"];
-a[2].textContent=siteContent["nav"]["nav-item-3"];
-a[3].textContent=siteContent["nav"]["nav-item-4"];
-a[4].textContent=siteContent["nav"]["nav-item-5"];
-a[5].textContent=siteContent["nav"]["nav-item-6"];
+let anchors=document.querySelectorAll('nav a');
+anchors[0].textContent=siteContent["nav"]["nav-item-1"];
+anchors[1].textContent=siteContent["nav"]["nav-item-2"];
+anchors[2].textContent=siteContent["nav"]["nav-item-3"];
+anchors[3].textContent=siteContent["nav"]["nav-item-4"];
+anchors[4].textContent=siteContent["nav"]["nav-item-5"];
+anchors[5].textContent=siteContent["nav"]["nav-item-6"];
+
+let lastNav=document.createElement('a');
+lastNav.textContent='test';
+nav.appendChild(lastNav);
 
 //CTA header
 let cta=document.querySelectorAll('.cta');
