@@ -48,34 +48,63 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//selectors by tag:
-let header=document.querySelectorAll('header');
-let p=document.querySelectorAll('p');
-let navItem1=document.querySelectorAll('nav nav-item-1');
-navItem1.textContent="Services";
-let div=document.querySelectorAll('div');
-let nav=document.querySelectorAll('nav');
-let a=document.querySelectorAll('a');
-let section=document.querySelectorAll('section');
+
+
+//nav:
+let nav=document.querySelector("nav");
+
+let anchors=document.querySelectorAll('nav a');
+anchors[0].textContent=siteContent["nav"]["nav-item-1"];
+anchors[1].textContent=siteContent["nav"]["nav-item-2"];
+anchors[2].textContent=siteContent["nav"]["nav-item-3"];
+anchors[3].textContent=siteContent["nav"]["nav-item-4"];
+anchors[4].textContent=siteContent["nav"]["nav-item-5"];
+anchors[5].textContent=siteContent["nav"]["nav-item-6"];
+
+ anchors.forEach(element => {
+  element.style.color = 'green'
+ });
+
+let lastNav=document.createElement('a').style;
+lastNav.textContent='lastNav';
+nav.appendChild(lastNav);
+let firstNav=document.createElement('a');
+firstNav.textContent='firstNav';
+nav.prepend(firstNav);
+
+
+
+//CTA header
+let cta=document.querySelectorAll('.cta');
+let ctaText=document.querySelectorAll(".cta .cta-text");
 let h1=document.querySelector('h1');
 h1.textContent=siteContent["cta"]["h1"];
-
 let button=document.querySelector('button');
 button.textContent=siteContent["cta"]["button"];
 
+
+//mainContent
+
+//all the h4s for the main content:
 let h4=document.querySelectorAll('h4');
-let footer=document.querySelectorAll('footer');
+h4[0].textContent=siteContent["main-content"]["features-h4"];
+h4[1].textContent=siteContent["main-content"]["about-h4"];
+h4[2].textContent=siteContent["main-content"]["services-h4"];
+h4[3].textContent=siteContent["main-content"]["product-h4"];
+h4[4].textContent=siteContent["main-content"]["vision-h4"];
 
+// all the paragraphs for the main content:
+let p=document.querySelectorAll('p');
+p[0].textContent=siteContent["main-content"]["features-content"];
+p[1].textContent=siteContent["main-content"]["about-content"];
+p[2].textContent=siteContent["main-content"]["services-content"];
+p[3].textContent=siteContent["main-content"]["product-content"];
+p[4].textContent=siteContent["main-content"]["vision-content"];
 
-
-//selectors by class:
-let cta=document.querySelectorAll('.cta');
-let ctaText=document.querySelectorAll(".cta-text");
-let mainContent=document.querySelectorAll('.main-content');
-let topContent=document.querySelectorAll('.top-content');
-let textContent=document.querySelectorAll('.textContent');
 let bottomContent=document.querySelectorAll('.bottom-content');
 let contact=document.querySelectorAll('.contact');
+
+
 
 //image selectors:
 let ctaImg=document.getElementById('cta-img');
