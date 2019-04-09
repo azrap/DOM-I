@@ -51,11 +51,24 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //selectors by tag:
 let header=document.querySelectorAll('header');
 let p=document.querySelectorAll('p');
-let navItem1=document.querySelectorAll('nav nav-item-1');
-navItem1.textContent="Services";
 let div=document.querySelectorAll('div');
-let nav=document.querySelectorAll('nav');
-let a=document.querySelectorAll('a');
+
+//nav:
+let nav=document.querySelectorAll("nav");
+// nav[1].textContent=siteContent["nav"]["nav-item-2"];
+// nav[2].textContent=siteContent["nav"]["nav-item-3"];
+// nav[3].textContent=siteContent["nav"]["nav-item-4"];
+// nav[4].textContent=siteContent["nav"]["nav-item-5"];
+// nav[5].textContent=siteContent["nav"]["nav-item-6"];
+
+let a=document.querySelectorAll('nav a');
+a[0].textContent=siteContent["nav"]["nav-item-1"];
+a[1].textContent=siteContent["nav"]["nav-item-2"];
+a[2].textContent=siteContent["nav"]["nav-item-3"];
+a[3].textContent=siteContent["nav"]["nav-item-4"];
+a[4].textContent=siteContent["nav"]["nav-item-5"];
+a[5].textContent=siteContent["nav"]["nav-item-6"];
+
 let section=document.querySelectorAll('section');
 let h1=document.querySelector('h1');
 h1.textContent=siteContent["cta"]["h1"];
@@ -70,7 +83,7 @@ let footer=document.querySelectorAll('footer');
 
 //selectors by class:
 let cta=document.querySelectorAll('.cta');
-let ctaText=document.querySelectorAll(".cta-text");
+let ctaText=document.querySelectorAll(".cta .cta-text");
 let mainContent=document.querySelectorAll('.main-content');
 let topContent=document.querySelectorAll('.top-content');
 let textContent=document.querySelectorAll('.textContent');
